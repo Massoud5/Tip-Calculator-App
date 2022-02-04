@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>TIP calculator app</title>
+
+</head>
+<body>
+
+  <h1>SPLI<br>TTER</h1>
+
+  <div class="tip-calculator">
+    <section class="left-column">
+      
+      <label for="bill">Bill</label>
+      <input type="number" name="bill" class="input bill-input" id="bill-input" placeholder="0">
+      <img src="/style/images/icon-dollar.svg" alt="" id="icon-dollar">
+      
+      <label for="" class="select-tip">Select Tip %</label>
+      <div class="tip">
+        <div class="tips cell tip-5">5%</div>
+        <div class="tips cell tip-10">10%</div>
+        <div class="tips cell tip-15 active-tip">15%</div>
+        <div class="tips cell tip-25">25%</div>
+        <div class="tips cell tip-50">50%</div>
+        <input type="number" id="tip-custom" class="cell tip-custom" min="0" max="100" placeholder="CUSTOM">
+      </div>
+      
+      <div class="people-label">
+        <label for="" >Number of people</label>
+        <label for="" id="error-el" class="error-style">Can't be zero!</label>
+      </div>
+      <input type="number" class="input people-input" placeholder="0">
+      <img src="/style/images/icon-person.svg" alt="" id="icon-person">
+
+    </section>
+
+    <section class="right-column">
+      
+      <p class="p1">
+        Tip Amount <br>
+        <span class="after-slash">/ person</span>
+        <span id="result-tip">$0.00</span>
+      </p>
+
+      <p class="p2">
+        Total <br>
+        <span class="after-slash">/ person</span>
+        <span id="result-total">$0.00</span>
+      </p>
+
+      <button type="button" id="reset-btn">Reset</button>
+      
+      
+    </section>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
+    Coded by <a href="#">Massoud</a>.
+  </div>
+  <script src="/js/main.js"></script>
+  <script src="/js/functions.js"></script>
+</body>
+</html>
