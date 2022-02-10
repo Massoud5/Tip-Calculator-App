@@ -57,7 +57,8 @@ h1{
 .tip-calculator{
     display: flex;
     margin:auto;
-    width: 60%;
+    /* width: 60%; */
+    max-width:880px;
     background: var(--White);
     border-radius: 15px;
     height: 350px;
@@ -232,7 +233,7 @@ input::-webkit-inner-spin-button{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
-@media (max-width:1353px) {
+@media (max-width:900px) {
 
     h1{
         margin-top: 40px;
@@ -269,7 +270,7 @@ input::-webkit-inner-spin-button{
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .cell{
         width: 48%;
         margin-bottom: 15px;
